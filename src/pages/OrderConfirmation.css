@@ -1,0 +1,73 @@
+.order-confirmation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 2rem;
+}
+
+.confirmation-container {
+  max-width: 600px;
+  width: 100%;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 2.5rem;
+  text-align: center;
+}
+
+.confirmation-header {
+  margin-bottom: 2rem;
+}
+
+.confirmation-header h1 {
+  font-size: 2.2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.check-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 40px;
+  border-radius: 50%;
+  margin: 1rem auto;
+}
+
+.confirmation-details {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.order-number {
+  font-weight: bold;
+  color: #3f51b5;
+  font-size: 1.2rem;
+}
+
+.next-steps {
+  padding-top: 1.5rem;
+  border-top: 1px solid #eee;
+}
+
+.home-button {
+  display: inline-block;
+  margin-top: 1.5rem;
+  background-color: #3f51b5;
+  color: white;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.home-button:hover {
+  background-color: #303f9f;
+} 
