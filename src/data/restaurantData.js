@@ -931,7 +931,7 @@ export const restaurantData = {
           {
             id: 'maa-t2-r3-i14',
             name: 'Adirasam',
-            description: 'Traditional Tamil sweet made with rice flour and jaggery',
+            description: 'Traditional Tamil sweet made from rice flour and jaggery',
             price: 89,
             image: 'https://rakskitchen.net/wp-content/uploads/2012/10/adhirasam.jpg'
           },
@@ -953,4 +953,418 @@ export const restaurantData = {
       }
     ]
   }
-}; 
+};
+
+// Add menu for Café Delhi Heights (Delhi Airport Terminal 2)
+restaurantData['del-t2-r2'] = {
+  categories: [
+    {
+      name: 'Breakfast Specials',
+      items: [
+        {
+          id: 'del-t2-r2-i1',
+          name: 'Avocado Toast',
+          description: 'Sourdough toast topped with smashed avocado, cherry tomatoes and microgreens',
+          price: 279,
+          image: 'https://www.washingtonpost.com/resizer/voY0RRJTZu-ZW1vmZ-yv7FCLYuA=/arc-anglerfish-washpost-prod-washpost/public/NJ7O53QGKAI6VMMZHKLZTRKFCI.jpg'
+        },
+        {
+          id: 'del-t2-r2-i2',
+          name: 'Bombay Masala Omelette',
+          description: 'Fluffy omelette with onions, tomatoes, green chilies and coriander',
+          price: 199,
+          image: 'https://www.indianhealthyrecipes.com/wp-content/uploads/2021/08/masala-omelette-recipe.jpg'
+        },
+        {
+          id: 'del-t2-r2-i3',
+          name: 'English Breakfast',
+          description: 'Eggs, bacon, sausages, grilled tomatoes, mushrooms and toast',
+          price: 349,
+          image: 'https://images.immediate.co.uk/production/volatile/sites/30/2020/08/english-breakfast-cropped-df2d27f.jpg'
+        },
+        {
+          id: 'del-t2-r2-i4',
+          name: 'Belgian Waffles',
+          description: 'Crispy waffles served with maple syrup, fresh fruits and whipped cream',
+          price: 259,
+          image: 'https://www.allrecipes.com/thmb/fvJRtB6gLEK_VCoi7IXJgSwbogE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/57176-Easy-Waffles-mfs_001-7b5ae30ab5ac4fa1b1df2b3b8c2f32c5.jpg'
+        }
+      ]
+    },
+    {
+      name: 'Sandwiches & Burgers',
+      items: [
+        {
+          id: 'del-t2-r2-i5',
+          name: 'Bombay Grilled Sandwich',
+          description: 'Classic Indian grilled sandwich with potatoes, cucumbers, tomatoes and cheese',
+          price: 199,
+          image: 'https://www.indianhealthyrecipes.com/wp-content/uploads/2022/03/bombay-sandwich-recipe.jpg'
+        },
+        {
+          id: 'del-t2-r2-i6',
+          name: 'Pesto Panini',
+          description: 'Grilled sandwich with mozzarella, tomatoes and homemade pesto',
+          price: 249,
+          image: 'https://cookieandkate.com/images/2020/04/best-pesto-recipe-2.jpg'
+        },
+        {
+          id: 'del-t2-r2-i7',
+          name: 'Signature Lamb Burger',
+          description: 'Juicy lamb patty with caramelized onions, cheese and house sauce',
+          price: 349,
+          image: 'https://assets.epicurious.com/photos/5729a27083aebc0e3294d2b9/master/pass/EP_20160419_hamiltonpouletlambburgerlead.jpg'
+        },
+        {
+          id: 'del-t2-r2-i8',
+          name: 'Veggie Buddha Burger',
+          description: 'Veggie patty packed with quinoa, beans and spices',
+          price: 299,
+          image: 'https://www.vegrecipesofindia.com/wp-content/uploads/2022/04/veggie-burger-recipe.jpg'
+        }
+      ]
+    },
+    {
+      name: 'Fusion Mains',
+      items: [
+        {
+          id: 'del-t2-r2-i9',
+          name: 'Delhi Heights Butter Chicken Pasta',
+          description: 'Penne pasta tossed in a creamy butter chicken sauce',
+          price: 329,
+          image: 'https://m.recipes.timesofindia.com/thumb/53684107.cms?imgsize=345859&width=800&height=800'
+        },
+        {
+          id: 'del-t2-r2-i10',
+          name: 'Achari Paneer Pizza',
+          description: 'Thin crust pizza topped with pickle-spiced paneer and veggies',
+          price: 349,
+          image: 'https://images.slurrp.com/prodarticles/ty2t0yj1i5v.webp?impolicy=slurrp-20210601&width=1200&height=900'
+        },
+        {
+          id: 'del-t2-r2-i11',
+          name: 'Chili Cheese Noodles',
+          description: 'Indo-Chinese style noodles tossed with vegetables and cheese',
+          price: 279,
+          image: 'https://www.vegrecipesofindia.com/wp-content/uploads/2021/04/veg-noodles-recipe-1.jpg'
+        },
+        {
+          id: 'del-t2-r2-i12',
+          name: 'Mexican Buddha Bowl',
+          description: 'Healthy bowl with grains, beans, avocado, salsa and greens',
+          price: 309,
+          image: 'https://www.eatwell101.com/wp-content/uploads/2017/11/Mexican-bowl-recipes.jpg'
+        }
+      ]
+    },
+    {
+      name: 'Beverages & Desserts',
+      items: [
+        {
+          id: 'del-t2-r2-i13',
+          name: 'Iced Vietnamese Coffee',
+          description: 'Strong coffee with condensed milk served over ice',
+          price: 169,
+          image: 'https://www.acouplecooks.com/wp-content/uploads/2021/08/Vietnamese-Iced-Coffee-004.jpg'
+        },
+        {
+          id: 'del-t2-r2-i14',
+          name: 'Fresh Berry Smoothie',
+          description: 'Mixed berries blended with yogurt and honey',
+          price: 199,
+          image: 'https://www.acouplecooks.com/wp-content/uploads/2021/03/Berry-Smoothie-006.jpg'
+        },
+        {
+          id: 'del-t2-r2-i15',
+          name: 'Chocolate Nutella Lava Cake',
+          description: 'Warm chocolate cake with a molten Nutella center, served with ice cream',
+          price: 229,
+          image: 'https://bellyfull.net/wp-content/uploads/2021/12/Chocolate-Lava-Cake-blog-4.jpg'
+        },
+        {
+          id: 'del-t2-r2-i16',
+          name: 'New York Cheesecake',
+          description: 'Classic creamy cheesecake with berry compote',
+          price: 249,
+          image: 'https://preppykitchen.com/wp-content/uploads/2021/06/Cheesecake-Recipe-Card.jpg'
+        }
+      ]
+    }
+  ]
+};
+
+// Add menu for Royal Mughlai (Delhi Airport Terminal 3)
+restaurantData['del-t3-r1'] = {
+  categories: [
+    {
+      name: 'Royal Starters',
+      items: [
+        {
+          id: 'del-t3-r1-i1',
+          name: 'Galouti Kebab',
+          description: 'Melt-in-mouth minced meat kebabs with aromatic spices',
+          price: 349,
+          image: 'https://www.indianhealthyrecipes.com/wp-content/uploads/2022/03/galouti-kebab-recipe.jpg'
+        },
+        {
+          id: 'del-t3-r1-i2',
+          name: 'Chicken Seekh Kebab',
+          description: 'Minced chicken skewers cooked in tandoor with herbs and spices',
+          price: 299,
+          image: 'https://www.indianhealthyrecipes.com/wp-content/uploads/2022/06/chicken-seekh-kebab-recipe.jpg'
+        },
+        {
+          id: 'del-t3-r1-i3',
+          name: 'Paneer Tikka',
+          description: 'Cottage cheese marinated in spices and grilled in tandoor',
+          price: 279,
+          image: 'https://www.indianhealthyrecipes.com/wp-content/uploads/2022/06/paneer-tikka-recipe.jpg'
+        },
+        {
+          id: 'del-t3-r1-i4',
+          name: 'Ajwaini Fish Tikka',
+          description: 'Fish marinated with carom seeds and spices, cooked in tandoor',
+          price: 349,
+          image: 'https://www.indianhealthyrecipes.com/wp-content/uploads/2022/06/fish-tikka-recipe.jpg'
+        }
+      ]
+    },
+    {
+      name: 'Mughlai Curries',
+      items: [
+        {
+          id: 'del-t3-r1-i5',
+          name: 'Murgh Makhani',
+          description: 'Classic butter chicken in rich tomato gravy with cream',
+          price: 349,
+          image: 'https://www.indianhealthyrecipes.com/wp-content/uploads/2021/08/butter-chicken-recipe.jpg'
+        },
+        {
+          id: 'del-t3-r1-i6',
+          name: 'Rogan Josh',
+          description: 'Aromatic lamb curry prepared with Kashmiri spices',
+          price: 379,
+          image: 'https://www.indianhealthyrecipes.com/wp-content/uploads/2022/03/rogan-josh-recipe.jpg'
+        },
+        {
+          id: 'del-t3-r1-i7',
+          name: 'Shahi Paneer',
+          description: 'Paneer cubes in rich creamy gravy with nuts and spices',
+          price: 299,
+          image: 'https://www.indianhealthyrecipes.com/wp-content/uploads/2022/03/shahi-paneer-recipe.jpg'
+        },
+        {
+          id: 'del-t3-r1-i8',
+          name: 'Nihari',
+          description: 'Slow-cooked meat stew with bone marrow and aromatic spices',
+          price: 399,
+          image: 'https://www.indianhealthyrecipes.com/wp-content/uploads/2022/07/nihari-recipe.jpg'
+        }
+      ]
+    },
+    {
+      name: 'Biryani & Rice',
+      items: [
+        {
+          id: 'del-t3-r1-i9',
+          name: 'Dum Murgh Biryani',
+          description: 'Fragrant rice layered with marinated chicken and slow-cooked',
+          price: 349,
+          image: 'https://www.indianhealthyrecipes.com/wp-content/uploads/2019/02/hyderabadi-biryani-recipe.jpg'
+        },
+        {
+          id: 'del-t3-r1-i10',
+          name: 'Gosht Biryani',
+          description: 'Traditional mutton biryani with aromatic spices and saffron',
+          price: 399,
+          image: 'https://www.indianhealthyrecipes.com/wp-content/uploads/2022/03/mutton-biryani-recipe.jpg'
+        },
+        {
+          id: 'del-t3-r1-i11',
+          name: 'Subz Biryani',
+          description: 'Mixed vegetable biryani with fragrant basmati rice',
+          price: 299,
+          image: 'https://www.indianhealthyrecipes.com/wp-content/uploads/2023/08/veg-biryani-recipe.jpg'
+        },
+        {
+          id: 'del-t3-r1-i12',
+          name: 'Zafrani Pulao',
+          description: 'Saffron-infused rice with dry fruits and mild spices',
+          price: 249,
+          image: 'https://1.bp.blogspot.com/-MlKnnxzXrfA/Xa4U-P2z-NI/AAAAAAAAO4g/6vYbCJk-QUcGqWJRn8P94MlXcUQFpL0LACKgBGAsYHg/s1600/zafrani%2Bpulao%2B1.JPG'
+        }
+      ]
+    },
+    {
+      name: 'Breads & Desserts',
+      items: [
+        {
+          id: 'del-t3-r1-i13',
+          name: 'Warqi Paratha',
+          description: 'Layered flaky flatbread brushed with ghee',
+          price: 69,
+          image: 'https://www.indianhealthyrecipes.com/wp-content/uploads/2022/04/lachha-paratha-recipe.jpg'
+        },
+        {
+          id: 'del-t3-r1-i14',
+          name: 'Sheermal',
+          description: 'Saffron-flavored sweet flatbread from Lucknow',
+          price: 79,
+          image: 'https://www.indianhealthyrecipes.com/wp-content/uploads/2022/04/sheermal-recipe.jpg'
+        },
+        {
+          id: 'del-t3-r1-i15',
+          name: 'Shahi Tukda',
+          description: 'Royal bread pudding with condensed milk and nuts',
+          price: 199,
+          image: 'https://www.indianhealthyrecipes.com/wp-content/uploads/2022/03/shahi-tukda-recipe.jpg'
+        },
+        {
+          id: 'del-t3-r1-i16',
+          name: 'Phirni',
+          description: 'Creamy rice pudding flavored with cardamom and saffron',
+          price: 149,
+          image: 'https://www.indianhealthyrecipes.com/wp-content/uploads/2022/04/phirni-recipe.jpg'
+        }
+      ]
+    }
+  ]
+};
+
+// Add menu for Veg Paradise (Delhi Airport Terminal 3)
+restaurantData['del-t3-r3'] = {
+  categories: [
+    {
+      name: 'Vegetarian Starters',
+      items: [
+        {
+          id: 'del-t3-r3-i1',
+          name: 'Paneer Tikka',
+          description: 'Cottage cheese marinated in spices and grilled in tandoor',
+          price: 249,
+          image: 'https://www.indianhealthyrecipes.com/wp-content/uploads/2022/06/paneer-tikka-recipe.jpg'
+        },
+        {
+          id: 'del-t3-r3-i2',
+          name: 'Veg Seekh Kebab',
+          description: 'Minced vegetable skewers with herbs and spices',
+          price: 199,
+          image: 'https://www.indianhealthyrecipes.com/wp-content/uploads/2022/04/veg-seekh-kebab-recipe.jpg'
+        },
+        {
+          id: 'del-t3-r3-i3',
+          name: 'Dahi Ke Kebab',
+          description: 'Soft kebabs made with hung curd and spices',
+          price: 219,
+          image: 'https://www.indianhealthyrecipes.com/wp-content/uploads/2022/04/dahi-kebab-recipe.jpg'
+        },
+        {
+          id: 'del-t3-r3-i4',
+          name: 'Hara Bhara Kebab',
+          description: 'Spinach and pea patties with aromatic spices',
+          price: 189,
+          image: 'https://www.indianhealthyrecipes.com/wp-content/uploads/2022/04/hara-bhara-kabab-recipe.jpg'
+        }
+      ]
+    },
+    {
+      name: 'Main Course',
+      items: [
+        {
+          id: 'del-t3-r3-i5',
+          name: 'Paneer Butter Masala',
+          description: 'Cottage cheese in rich tomato gravy with butter and cream',
+          price: 299,
+          image: 'https://www.indianhealthyrecipes.com/wp-content/uploads/2022/04/paneer-butter-masala-recipe.jpg'
+        },
+        {
+          id: 'del-t3-r3-i6',
+          name: 'Malai Kofta',
+          description: 'Stuffed paneer dumplings in creamy gravy',
+          price: 279,
+          image: 'https://www.indianhealthyrecipes.com/wp-content/uploads/2021/04/malai-kofta-recipe.jpg'
+        },
+        {
+          id: 'del-t3-r3-i7',
+          name: 'Kadai Vegetables',
+          description: 'Mixed vegetables tossed in spicy kadai masala',
+          price: 249,
+          image: 'https://www.indianhealthyrecipes.com/wp-content/uploads/2022/03/kadai-vegetables-recipe.jpg'
+        },
+        {
+          id: 'del-t3-r3-i8',
+          name: 'Dal Makhani',
+          description: 'Black lentils slow-cooked with butter and cream',
+          price: 229,
+          image: 'https://www.indianhealthyrecipes.com/wp-content/uploads/2021/05/dal-makhani-recipe.jpg'
+        }
+      ]
+    },
+    {
+      name: 'Rice & Breads',
+      items: [
+        {
+          id: 'del-t3-r3-i9',
+          name: 'Veg Dum Biryani',
+          description: 'Fragrant rice layered with mixed vegetables and spices',
+          price: 249,
+          image: 'https://www.indianhealthyrecipes.com/wp-content/uploads/2023/08/veg-biryani-recipe.jpg'
+        },
+        {
+          id: 'del-t3-r3-i10',
+          name: 'Tawa Paratha',
+          description: 'Whole wheat flatbread with layers, cooked on griddle',
+          price: 49,
+          image: 'https://www.indianhealthyrecipes.com/wp-content/uploads/2022/04/lachha-paratha-recipe.jpg'
+        },
+        {
+          id: 'del-t3-r3-i11',
+          name: 'Garlic Naan',
+          description: 'Leavened bread with garlic and coriander',
+          price: 69,
+          image: 'https://www.indianhealthyrecipes.com/wp-content/uploads/2023/07/garlic-naan-recipe.jpg'
+        },
+        {
+          id: 'del-t3-r3-i12',
+          name: 'Jeera Rice',
+          description: 'Basmati rice cooked with cumin seeds',
+          price: 129,
+          image: 'https://www.indianhealthyrecipes.com/wp-content/uploads/2022/04/jeera-rice-recipe.jpg'
+        }
+      ]
+    },
+    {
+      name: 'Desserts & Beverages',
+      items: [
+        {
+          id: 'del-t3-r3-i13',
+          name: 'Gulab Jamun',
+          description: 'Deep-fried milk solids soaked in sugar syrup',
+          price: 89,
+          image: 'https://www.indianhealthyrecipes.com/wp-content/uploads/2022/03/gulab-jamun-recipe.jpg'
+        },
+        {
+          id: 'del-t3-r3-i14',
+          name: 'Rasgulla',
+          description: 'Soft cottage cheese balls in sugar syrup',
+          price: 79,
+          image: 'https://www.indianhealthyrecipes.com/wp-content/uploads/2022/03/rasgulla-recipe.jpg'
+        },
+        {
+          id: 'del-t3-r3-i15',
+          name: 'Sweet Lassi',
+          description: 'Yogurt drink sweetened with sugar and flavored with cardamom',
+          price: 89,
+          image: 'https://www.indianhealthyrecipes.com/wp-content/uploads/2022/03/lassi-recipe.jpg'
+        },
+        {
+          id: 'del-t3-r3-i16',
+          name: 'Masala Chai',
+          description: 'Indian spiced tea with ginger and cardamom',
+          price: 59,
+          image: 'https://www.indianhealthyrecipes.com/wp-content/uploads/2023/08/masala-chai-recipe.jpg'
+        }
+      ]
+    }
+  ]
+};
