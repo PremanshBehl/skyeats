@@ -86,6 +86,31 @@ export const CartProvider = ({ children }) => {
   };
 
   const removeFromCart = (itemId) => {
+    setCart(prevCart => {
+      const existingItemIndex = prevCart.findIndex(item => item.id === itemId);
+      
+      if (existingItemIndex >= 0) {
+        const updatedCart = [...prevCart];
+        const currentItem = updatedCart[existingItemIndex];
+        
+        if (currentItem.quantity > 1) {
+          // Decrease quantity by 1
+          updatedCart[existingItemIndex] = {
+            ...currentItem,
+            quantity: currentItem.quantity - 1
+          };
+          return updatedCart;
+        } else {
+          // Remove item if quantity would be less than 1
+          return prevCart.filter(item => item.id !== itemId);
+        }
+      }
+      
+      return prevCart;
+    });
+  };
+
+  const deleteFromCart = (itemId) => {
     setCart(prevCart => prevCart.filter(item => item.id !== itemId));
   };
 
@@ -126,6 +151,7 @@ export const CartProvider = ({ children }) => {
       deliveryDetails,
       addToCart,
       removeFromCart,
+      deleteFromCart,
       updateQuantity,
       clearCart,
       getCartTotal,

@@ -8,13 +8,14 @@ import './RestaurantMenu.css';
 const RestaurantMenu = () => {
   const { restaurantId } = useParams();
   const navigate = useNavigate();
-  const { cart, addToCart, getCartItemCount } = useCart();
+  const { cart, addToCart, removeFromCart, getCartItemCount } = useCart();
   const [restaurant, setRestaurant] = useState(null);
   const [menu, setMenu] = useState(null);
   const [activeCategory, setActiveCategory] = useState('');
   const [loading, setLoading] = useState(true);
   const [itemCounts, setItemCounts] = useState({});
   const [showAddedMessage, setShowAddedMessage] = useState(false);
+  const [messageText, setMessageText] = useState('');
   const categoryRefs = useRef({});
 
   useEffect(() => {
@@ -65,7 +66,7 @@ const RestaurantMenu = () => {
   };
 
   const handleAddToCart = (item) => {
-    addToCart(item);
+    addToCart({...item, quantity: 1});
     
     // Update item count
     setItemCounts(prev => ({
@@ -74,10 +75,47 @@ const RestaurantMenu = () => {
     }));
     
     // Show added message
+    setMessageText('Item added to cart!');
     setShowAddedMessage(true);
     setTimeout(() => {
       setShowAddedMessage(false);
     }, 2000);
+  };
+
+  const handleRemoveFromCart = (item) => {
+    removeFromCart(item.id);
+    
+    // Update item count based on cart after removal
+    setTimeout(() => {
+      const itemInCart = cart.find(cartItem => cartItem.id === item.id);
+      if (itemInCart) {
+        setItemCounts(prev => ({
+          ...prev,
+          [item.id]: itemInCart.quantity
+        }));
+      } else {
+        setItemCounts(prev => {
+          const newCounts = {...prev};
+          delete newCounts[item.id];
+          return newCounts;
+        });
+      }
+    }, 0);
+    
+    // Show removed message
+    setMessageText('Item quantity updated');
+    setShowAddedMessage(true);
+    setTimeout(() => {
+      setShowAddedMessage(false);
+    }, 2000);
+  };
+
+  const handleQuantityChange = (item, action) => {
+    if (action === 'increase') {
+      handleAddToCart(item);
+    } else if (action === 'decrease') {
+      handleRemoveFromCart(item);
+    }
   };
 
   const renderRatingStars = (rating) => {
@@ -206,18 +244,20 @@ const RestaurantMenu = () => {
                         <div className="menu-item-price-actions">
                           <span className="menu-item-price">${item.price.toFixed(2)}</span>
                           <div className="menu-item-actions">
-                            {itemCounts[item.id] ? (
+                            {itemCounts[item.id] > 0 ? (
                               <div className="item-counter">
                                 <button 
                                   className="counter-btn minus"
-                                  onClick={() => handleAddToCart({...item, quantity: -1})}
+                                  onClick={() => handleQuantityChange(item, 'decrease')}
+                                  aria-label="Decrease quantity"
                                 >
                                   <FaMinus />
                                 </button>
                                 <span className="count">{itemCounts[item.id]}</span>
                                 <button 
                                   className="counter-btn plus"
-                                  onClick={() => handleAddToCart(item)}
+                                  onClick={() => handleQuantityChange(item, 'increase')}
+                                  aria-label="Increase quantity"
                                 >
                                   <FaPlus />
                                 </button>
@@ -253,7 +293,7 @@ const RestaurantMenu = () => {
 
         {/* Added to Cart Message */}
         <div className={`added-message ${showAddedMessage ? 'show' : ''}`}>
-          Item added to cart!
+          {messageText}
         </div>
       </div>
     </div>

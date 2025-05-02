@@ -255,30 +255,45 @@
 .item-counter {
   display: flex;
   align-items: center;
-  border: 1px solid #444;
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: var(--border-radius);
-  overflow: hidden;
+  padding: 0.2rem;
+  border: 1px solid rgba(248, 93, 44, 0.3);
 }
 
 .counter-btn {
-  background-color: transparent;
-  border: none;
-  color: var(--text-light);
-  width: 30px;
-  height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--primary);
+  color: white;
+  font-size: 0.8rem;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.2s;
+  padding: 0;
+}
+
+.counter-btn.minus {
+  background-color: #333;
 }
 
 .counter-btn:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--primary-dark);
+  transform: scale(1.05);
+}
+
+.counter-btn.minus:hover {
+  background-color: #555;
 }
 
 .count {
-  width: 30px;
+  margin: 0 0.5rem;
+  font-weight: 600;
+  min-width: 24px;
   text-align: center;
 }
 
