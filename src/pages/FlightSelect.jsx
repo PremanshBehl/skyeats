@@ -15,7 +15,7 @@ const terminals = {
   del: ['Terminal 1', 'Terminal 2', 'Terminal 3'],
   bom: ['Terminal 1', 'Terminal 2'],
   ccu: ['Terminal 1', 'Terminal 2'],
-  maa: ['Terminal 1', 'Terminal 2', 'Terminal 3', 'Terminal 4']
+  maa: ['Terminal 1', 'Terminal 2']
 };
 
 const FlightSelect = () => {

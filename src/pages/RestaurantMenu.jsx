@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { FaArrowLeft, FaStar, FaDollarSign, FaShoppingCart, FaPlus, FaMinus } from 'react-icons/fa';
 import { useCart } from '../context/CartContext';
-import { restaurantData, menuData } from '../data/restaurantData';
+import { restaurantData } from '../data/restaurantData';
 import './RestaurantMenu.css';
 
 const RestaurantMenu = () => {
@@ -31,7 +31,7 @@ const RestaurantMenu = () => {
     });
     
     // Get menu data
-    const restaurantMenu = menuData[restaurantId] || null;
+    const restaurantMenu = restaurantData[restaurantId] || null;
 
     // Simulate API loading
     const timer = setTimeout(() => {
