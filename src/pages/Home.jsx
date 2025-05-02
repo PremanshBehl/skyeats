@@ -19,11 +19,26 @@ const Home = () => {
       <section className="partners section">
         <h3 className="section-title text-center">Partnering with top airport restaurants</h3>
         <div className="partners-logos">
-          <div className="partner-logo">Restaurant 1</div>
-          <div className="partner-logo">Restaurant 2</div>
-          <div className="partner-logo">Restaurant 3</div>
-          <div className="partner-logo">Restaurant 4</div>
-          <div className="partner-logo">Restaurant 5</div>
+          <div className="partner-logo">
+            <img src="https://images.unsplash.com/photo-1589647363585-f4a7d3877b10?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmVuZ2FsaSUyMGZvb2R8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60" alt="Bengali Kitchen" />
+            <p>Bengali Kitchen</p>
+          </div>
+          <div className="partner-logo">
+            <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3RlYWt8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60" alt="Steakhouse" />
+            <p>Steakhouse</p>
+          </div>
+          <div className="partner-logo">
+            <img src="https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGFyc2klMjBmb29kfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60" alt="Parsi Paradise" />
+            <p>Parsi Paradise</p>
+          </div>
+          <div className="partner-logo">
+            <img src="https://images.unsplash.com/photo-1505253758473-96b7015fcd40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YmlyeWFuaXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="Royal Mughlai" />
+            <p>Royal Mughlai</p>
+          </div>
+          <div className="partner-logo">
+            <img src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZG9zYXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="Dosa Factory" />
+            <p>Dosa Factory</p>
+          </div>
         </div>
       </section>
 
