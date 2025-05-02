@@ -966,21 +966,21 @@ restaurantData['del-t1-r1'] = {
           name: 'Tandoori Chicken',
           description: 'Chicken marinated in yogurt and spices, cooked in a tandoor',
           price: 299,
-          image: 'https://www.licious.in/blog/wp-content/uploads/2020/12/Tandoori-Chicken-750x750.jpg'
+          image: 'https://cti.farziengineer.co/products/Chicken_Whole_in_tandoori_With_Skin-02a48764cccd.jpg?auto=format&sharp=20&ixlib=react-9.3.0'
         },
         {
           id: 'del-t1-r1-i2',
-          name: 'Paneer Tikka',
-          description: 'Chunks of paneer marinated in spices and grilled in tandoor',
-          price: 249,
-          image: 'https://www.indianhealthyrecipes.com/wp-content/uploads/2022/06/paneer-tikka-recipe.jpg'
+          name: 'Malai Tikka',
+          description: 'Tender chicken pieces marinated in creamy malai and mild spices',
+          price: 279,
+          image: 'https://www.scrumptiously.com/wp-content/uploads/2023/01/ChickenMalaiTikka-500x375.webp'
         },
         {
           id: 'del-t1-r1-i3',
           name: 'Seekh Kebab',
           description: 'Minced meat mixed with herbs and spices, skewered and grilled',
           price: 279,
-          image: 'https://recipe52.com/wp-content/uploads/2020/10/Seekh-Kebab-3.jpg'
+          image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjM4-HD2f7Dp13SVo7P1gynMrNP8HJYtzodQ&s'
         },
         {
           id: 'del-t1-r1-i4',
@@ -999,7 +999,7 @@ restaurantData['del-t1-r1'] = {
           name: 'Butter Chicken',
           description: 'Tandoori chicken in a rich, creamy tomato gravy',
           price: 349,
-          image: 'https://cafedelites.com/wp-content/uploads/2019/01/Butter-Chicken-IMAGE-27.jpg'
+          image: 'https://img.taste.com.au/qPAElV3h/taste/2013/07/easy-butter-chicken-image1-197844-1.jpg'
         },
         {
           id: 'del-t1-r1-i6',
@@ -1013,14 +1013,21 @@ restaurantData['del-t1-r1'] = {
           name: 'Dal Makhani',
           description: 'Black lentils and kidney beans simmered in a rich, buttery gravy',
           price: 229,
-          image: 'https://www.indianhealthyrecipes.com/wp-content/uploads/2021/05/dal-makhani-recipe.jpg'
+          image: 'https://rainbowplantlife.com/wp-content/uploads/2021/06/Dal-Makhani-edited-photos-5-of-6.jpg'
         },
         {
           id: 'del-t1-r1-i8',
-          name: 'Punjabi Kadhi',
-          description: 'Yogurt-based curry with gram flour fritters',
-          price: 199,
-          image: 'https://www.vegrecipesofindia.com/wp-content/uploads/2020/01/punjabi-kadhi-recipe-1.jpg'
+          name: 'Paneer Butter Masala',
+          description: 'Paneer cubes in a rich, creamy tomato gravy with butter',
+          price: 269,
+          image: 'https://www.cookwithmanali.com/wp-content/uploads/2019/05/Paneer-Butter-Masala-500x500.jpg'
+        },
+        {
+          id: 'del-t1-r1-i17',
+          name: 'Amritsari Chole',
+          description: 'Spicy chickpea curry made in authentic Amritsari style',
+          price: 219,
+          image: 'https://thegastronomicbong.com/wp-content/uploads/2019/05/Amritsari-Pindi-Chole-5-500x375.jpg'
         }
       ]
     },
@@ -1036,24 +1043,24 @@ restaurantData['del-t1-r1'] = {
         },
         {
           id: 'del-t1-r1-i10',
-          name: 'Garlic Roti',
-          description: 'Whole wheat bread topped with garlic and cilantro',
-          price: 39,
-          image: 'https://www.indianveggiedelight.com/wp-content/uploads/2021/08/garlic-naan-1-500x500.jpg'
+          name: 'Garlic Naan',
+          description: 'Soft flatbread topped with garlic and cilantro, baked in tandoor',
+          price: 59,
+          image: 'https://thebellyrulesthemind.net/wp-content/uploads/2020/09/Garlic-Naan-3-720x720.jpg'
         },
         {
           id: 'del-t1-r1-i11',
           name: 'Jeera Rice',
           description: 'Basmati rice tempered with cumin seeds',
           price: 159,
-          image: 'https://www.cubesnjuliennes.com/wp-content/uploads/2020/07/Jeera-Rice-Recipe-1.jpg'
+          image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsVSyNS4VwcDckFA7cje8moojoHibOMQutsQ&s'
         },
         {
           id: 'del-t1-r1-i12',
           name: 'Veg Biryani',
           description: 'Fragrant rice with vegetables and aromatic spices',
           price: 229,
-          image: 'https://www.indianhealthyrecipes.com/wp-content/uploads/2023/08/veg-biryani-recipe.jpg'
+          image: 'https://i.ytimg.com/vi/Do7ZdUodDdw/maxresdefault.jpg'
         }
       ]
     },
@@ -1065,28 +1072,28 @@ restaurantData['del-t1-r1'] = {
           name: 'Gulab Jamun',
           description: 'Deep-fried milk solids soaked in sugar syrup',
           price: 99,
-          image: 'https://www.indianhealthyrecipes.com/wp-content/uploads/2022/03/gulab-jamun-recipe.jpg'
+          image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpridNzzU09HIIGpVPQ9XhWqay-q7NrMj1yg&s'
         },
         {
           id: 'del-t1-r1-i14',
           name: 'Kulfi Falooda',
           description: 'Indian ice cream with vermicelli, basil seeds, and rose syrup',
           price: 129,
-          image: 'https://www.rajbhog.com/wp-content/uploads/2022/03/Kulfi-Falooda.jpg'
+          image: 'https://imgmediagumlet.lbb.in/media/2024/04/66279a51cd746722ff2f9dca_1713871441103.jpg'
         },
         {
           id: 'del-t1-r1-i15',
           name: 'Lassi',
           description: 'Sweet yogurt drink topped with malai',
           price: 89,
-          image: 'https://www.cookwithmanali.com/wp-content/uploads/2020/04/Punjabi-Lassi-500x500.jpg'
+          image: 'https://static.toiimg.com/thumb/58360232.cms?imgsize=1259672&width=800&height=800'
         },
         {
           id: 'del-t1-r1-i16',
           name: 'Masala Chai',
           description: 'Indian spiced tea with ginger and cardamom',
           price: 59,
-          image: 'https://www.indianhealthyrecipes.com/wp-content/uploads/2023/08/masala-chai-recipe.jpg'
+          image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF1AF8ZQ6A-PSJHw_ArFGkrkflteihQlJzmg&s'
         }
       ]
     }
