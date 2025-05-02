@@ -1368,3 +1368,141 @@ restaurantData['del-t3-r3'] = {
     }
   ]
 };
+
+// Add menu for Delhi Baking Company (Delhi Airport Terminal 3)
+restaurantData['del-t3-r2'] = {
+  categories: [
+    {
+      name: 'Breakfast Pastries',
+      items: [
+        {
+          id: 'del-t3-r2-i1',
+          name: 'Butter Croissant',
+          description: 'Flaky, buttery French pastry',
+          price: 79,
+          image: 'https://www.kingarthurbaking.com/sites/default/files/styles/featured_image/public/2021-10/classic-croissants.jpg'
+        },
+        {
+          id: 'del-t3-r2-i2',
+          name: 'Pain au Chocolat',
+          description: 'Chocolate-filled croissant pastry',
+          price: 99,
+          image: 'https://www.kingarthurbaking.com/sites/default/files/2020-03/pain-au-chocolat.jpg'
+        },
+        {
+          id: 'del-t3-r2-i3',
+          name: 'Cinnamon Roll',
+          description: 'Sweet roll with cinnamon-sugar filling and cream cheese frosting',
+          price: 109,
+          image: 'https://sallysbakingaddiction.com/wp-content/uploads/2016/08/maple-cinnamon-rolls-5.jpg'
+        },
+        {
+          id: 'del-t3-r2-i4',
+          name: 'Fruit Danish',
+          description: 'Flaky pastry topped with seasonal fruits and custard',
+          price: 89,
+          image: 'https://www.thespruceeats.com/thmb/a88OeD8XYY6Co_1Jj4cQ1I1RxlE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/danishpastries-18-56a645813df78cf772900ba6.jpg'
+        }
+      ]
+    },
+    {
+      name: 'Breads & Savory',
+      items: [
+        {
+          id: 'del-t3-r2-i5',
+          name: 'Sourdough Bread',
+          description: 'Artisanal sourdough loaf with tangy flavor and crisp crust',
+          price: 149,
+          image: 'https://www.kingarthurbaking.com/sites/default/files/styles/featured_image/public/2020-02/the-easiest-sourdough-bread-ever.jpg'
+        },
+        {
+          id: 'del-t3-r2-i6',
+          name: 'Cheese & Herb Roll',
+          description: 'Soft roll with mixed herbs and three-cheese blend',
+          price: 69,
+          image: 'https://www.recipetineats.com/wp-content/uploads/2020/04/Cheese-and-Herb-Bread_2-SQ.jpg'
+        },
+        {
+          id: 'del-t3-r2-i7',
+          name: 'Spinach & Feta Quiche',
+          description: 'Savory tart with spinach, feta cheese and eggs',
+          price: 159,
+          image: 'https://www.simplyrecipes.com/thmb/OSrHxCQ1L5Ne4tnl_H2sJA4CqxE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2019__01__Spinach-Feta-Quiche-LEAD-1-6c5f3c3ec26e4fb9a8a56e0c0df94781.jpg'
+        },
+        {
+          id: 'del-t3-r2-i8',
+          name: 'Tomato Focaccia',
+          description: 'Italian flatbread with tomatoes, herbs and olive oil',
+          price: 129,
+          image: 'https://www.recipetineats.com/wp-content/uploads/2020/05/Garlic-Focaccia_1-SQ.jpg'
+        }
+      ]
+    },
+    {
+      name: 'Cakes & Desserts',
+      items: [
+        {
+          id: 'del-t3-r2-i9',
+          name: 'Tiramisu',
+          description: 'Classic Italian dessert with coffee-soaked ladyfingers and mascarpone',
+          price: 189,
+          image: 'https://www.recipetineats.com/wp-content/uploads/2016/09/Tiramisu_0.jpg'
+        },
+        {
+          id: 'del-t3-r2-i10',
+          name: 'New York Cheesecake',
+          description: 'Rich and creamy classic cheesecake with graham cracker crust',
+          price: 169,
+          image: 'https://www.recipetineats.com/wp-content/uploads/2016/07/New-York-Cheesecake_0.jpg'
+        },
+        {
+          id: 'del-t3-r2-i11',
+          name: 'Red Velvet Cupcake',
+          description: 'Moist red cocoa cake with cream cheese frosting',
+          price: 89,
+          image: 'https://www.recipetineats.com/wp-content/uploads/2017/12/Red-Velvet-Cupcakes_1.jpg'
+        },
+        {
+          id: 'del-t3-r2-i12',
+          name: 'Chocolate Hazelnut Tart',
+          description: 'Rich chocolate tart with hazelnut crust',
+          price: 199,
+          image: 'https://www.simplyrecipes.com/thmb/tR5kZbOz_RH-rYBNX9TZUPxkTvs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2018__11__Chocolate-Chestnut-Tort-LEAD-VERTICAL-c0d0104e9d14481288e3cd94b85214f8.jpg'
+        }
+      ]
+    },
+    {
+      name: 'Coffee & Beverages',
+      items: [
+        {
+          id: 'del-t3-r2-i13',
+          name: 'Cappuccino',
+          description: 'Espresso with steamed milk and thick foam',
+          price: 129,
+          image: 'https://www.acouplecooks.com/wp-content/uploads/2020/10/how-to-make-cappuccino-005.jpg'
+        },
+        {
+          id: 'del-t3-r2-i14',
+          name: 'Masala Chai Latte',
+          description: 'Indian spiced tea with steamed milk',
+          price: 119,
+          image: 'https://www.acouplecooks.com/wp-content/uploads/2021/11/Chai-Latte-004.jpg'
+        },
+        {
+          id: 'del-t3-r2-i15',
+          name: 'Fresh Fruit Smoothie',
+          description: 'Blend of seasonal fruits with yogurt and honey',
+          price: 149,
+          image: 'https://www.acouplecooks.com/wp-content/uploads/2021/03/Berry-Smoothie-006.jpg'
+        },
+        {
+          id: 'del-t3-r2-i16',
+          name: 'Iced Hazelnut Mocha',
+          description: 'Chilled espresso with chocolate, hazelnut syrup and milk',
+          price: 139,
+          image: 'https://www.acouplecooks.com/wp-content/uploads/2020/10/Mocha-001.jpg'
+        }
+      ]
+    }
+  ]
+};
