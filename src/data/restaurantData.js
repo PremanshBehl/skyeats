@@ -1111,28 +1111,28 @@ restaurantData['del-t1-r2'] = {
           name: 'Gol Gappa',
           description: 'Crispy hollow puris filled with spicy tangy water, potatoes and chickpeas',
           price: 99,
-          image: 'https://www.indianhealthyrecipes.com/wp-content/uploads/2022/03/golgappa-recipe-pani-puri.jpg'
+          image: 'https://static.toiimg.com/thumb/53739648.cms?imgsize=115082&width=800&height=800'
         },
         {
           id: 'del-t1-r2-i2',
           name: 'Aloo Tikki',
           description: 'Crispy potato patties served with yogurt, chutneys and spices',
           price: 129,
-          image: 'https://www.indianhealthyrecipes.com/wp-content/uploads/2019/10/aloo-tikki-recipe.jpg'
+          image: 'https://sinfullyspicy.com/wp-content/uploads/2024/10/Chole-Tikki-Chaat-Featured-Image.jpg'
         },
         {
           id: 'del-t1-r2-i3',
           name: 'Papdi Chaat',
           description: 'Crisp fried dough wafers topped with potatoes, chickpeas, yogurt and chutneys',
           price: 119,
-          image: 'https://www.indianhealthyrecipes.com/wp-content/uploads/2019/11/papdi-chaat-recipe.jpg'
+          image: 'https://tastedrecipes.com/wp-content/uploads/2022/04/Dahi-Papdi-Chaat-11.jpg'
         },
         {
           id: 'del-t1-r2-i4',
           name: 'Dahi Bhalla',
           description: 'Soft lentil dumplings in yogurt topped with spices and chutneys',
           price: 109,
-          image: 'https://www.indianhealthyrecipes.com/wp-content/uploads/2023/02/dahi-bhalla-recipe.jpg'
+          image: 'https://foodsandflavorsbyshilpi.com/wp-content/uploads/2016/05/FB-Thumnails-website-old-1.jpg'
         }
       ]
     },
@@ -1144,14 +1144,14 @@ restaurantData['del-t1-r2'] = {
           name: 'Chole Bhature',
           description: 'Spiced chickpea curry served with deep-fried bread',
           price: 159,
-          image: 'https://www.indianhealthyrecipes.com/wp-content/uploads/2019/01/chole-bhature-recipe.jpg'
+          image: 'https://www.chefkunalkapur.com/wp-content/uploads/2021/03/Chole-Bhature-1300x867.jpg?v=1620120118'
         },
         {
           id: 'del-t1-r2-i6',
           name: 'Raj Kachori',
           description: 'Large crispy puri filled with potatoes, sprouts, and assorted chutneys',
           price: 139,
-          image: 'https://www.indianhealthyrecipes.com/wp-content/uploads/2022/05/raj-kachori-recipe.jpg'
+          image: 'https://upload.wikimedia.org/wikipedia/commons/0/0b/Raj_Kachori_Haldiram.jpg'
         },
         {
           id: 'del-t1-r2-i7',
@@ -1165,7 +1165,7 @@ restaurantData['del-t1-r2'] = {
           name: 'Kathi Roll',
           description: 'Flatbread wrapped around spiced fillings of your choice',
           price: 169,
-          image: 'https://www.indianhealthyrecipes.com/wp-content/uploads/2016/07/kathi-roll-recipe.jpg'
+          image: 'https://frommybowl.com/wp-content/uploads/2020/12/chana-kathi-rolls-landscape.jpg'
         }
       ]
     },
@@ -1177,28 +1177,28 @@ restaurantData['del-t1-r2'] = {
           name: 'Jalebi',
           description: 'Deep-fried fermented batter soaked in sugar syrup',
           price: 79,
-          image: 'https://www.indianhealthyrecipes.com/wp-content/uploads/2012/11/jalebi-recipe-2-500x500.jpg'
+          image: 'https://thatdeliciousdish.com/wp-content/uploads/2018/09/Thumbnail-Jalebi-and-Rabri-recipe-1-scaled.jpg'
         },
         {
           id: 'del-t1-r2-i10',
           name: 'Rabri Falooda',
           description: 'Sweetened thickened milk with vermicelli, basil seeds, and ice cream',
           price: 119,
-          image: 'https://www.cookwithmanali.com/wp-content/uploads/2018/04/Falooda-Recipe-500x500.jpg'
+          image: 'https://yourfoodfantasy.com/wp-content/webpc-passthru.php?src=https://yourfoodfantasy.com/wp-content/uploads/2015/12/rabri-falooda-at-yourfoodfantasy-com-by-meenu-gupta1.jpg&nocache=1'
         },
         {
           id: 'del-t1-r2-i11',
           name: 'Malpua',
           description: 'Sweet pancakes dipped in sugar syrup, garnished with rabri',
           price: 99,
-          image: 'https://www.indianhealthyrecipes.com/wp-content/uploads/2015/06/malpua-recipe.jpg'
+          image: 'https://www.cookshideout.com/wp-content/uploads/2012/11/Bengali-Malpua-FI.jpg'
         },
         {
           id: 'del-t1-r2-i12',
           name: 'Moong Dal Halwa',
           description: 'Sweet dessert made with moong dal, ghee, and sugar',
           price: 119,
-          image: 'https://www.indianhealthyrecipes.com/wp-content/uploads/2013/02/moong-dal-halwa-recipe.jpg'
+          image: 'https://images.getrecipekit.com/20221019114738-moong-20dal-20halwa.jpg?aspect_ratio=16:9&quality=90&'
         }
       ]
     },
@@ -1210,28 +1210,28 @@ restaurantData['del-t1-r2'] = {
           name: 'Masala Chaas',
           description: 'Spiced buttermilk with cumin, mint, and coriander',
           price: 59,
-          image: 'https://www.indianhealthyrecipes.com/wp-content/uploads/2019/05/masala-chaas-recipe.jpg'
+          image: 'https://c.ndtvimg.com/2021-04/31fea82g_chaas_625x300_27_April_21.jpg'
         },
         {
           id: 'del-t1-r2-i14',
           name: 'Kanji',
           description: 'Traditional fermented mustard drink',
           price: 69,
-          image: 'https://www.indianhealthyrecipes.com/wp-content/uploads/2021/03/kanji-drink-recipe.jpg'
+          image: 'https://static.toiimg.com/thumb/msid-107406284,width-1280,height-720,imgsize-51686,resizemode-6,overlay-toi_sw,pt-32,y_pad-40/photo.jpg'
         },
         {
           id: 'del-t1-r2-i15',
           name: 'Fresh Lime Soda',
           description: 'Refreshing drink made with lime juice and soda water',
           price: 79,
-          image: 'https://www.indianhealthyrecipes.com/wp-content/uploads/2022/04/nimbu-soda-recipe.jpg'
+          image: 'https://www.ndtv.com/cooks/images/lime-soda-620.jpg'
         },
         {
           id: 'del-t1-r2-i16',
           name: 'Badam Milk',
           description: 'Sweet almond-flavored milk drink',
           price: 89,
-          image: 'https://www.indianhealthyrecipes.com/wp-content/uploads/2015/06/badam-milk-recipe.jpg'
+          image: 'https://pipingpotcurry.com/wp-content/uploads/2021/08/Hot-badam-milk.jpg'
         }
       ]
     }
