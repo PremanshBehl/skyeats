@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { FaStar, FaArrowLeft, FaDollarSign, FaClock } from 'react-icons/fa';
+import { FaStar, FaArrowLeft, FaClock } from 'react-icons/fa';
 import { useCart } from '../context/CartContext';
 import { restaurantData } from '../data/restaurantData';
 import './Restaurants.css';
@@ -50,7 +50,7 @@ const Restaurants = () => {
 
   const renderPriceRange = (priceRange) => {
     return priceRange.split('').map((_, index) => (
-      <FaDollarSign key={index} className="price-icon" />
+      <span key={index} className="price-icon">₹</span>
     ));
   };
 

@@ -138,7 +138,7 @@ const RestaurantMenu = () => {
 
   const renderPriceRange = (priceRange) => {
     return priceRange.split('').map((_, index) => (
-      <FaDollarSign key={index} className="price-icon" />
+      <span key={index} className="price-icon">₹</span>
     ));
   };
 
@@ -242,7 +242,7 @@ const RestaurantMenu = () => {
                         <h3>{item.name}</h3>
                         <p className="menu-item-description">{item.description}</p>
                         <div className="menu-item-price-actions">
-                          <span className="menu-item-price">${item.price.toFixed(2)}</span>
+                          <span className="menu-item-price">₹{item.price.toFixed(2)}</span>
                           <div className="menu-item-actions">
                             {itemCounts[item.id] > 0 ? (
                               <div className="item-counter">
