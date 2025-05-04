@@ -144,9 +144,13 @@ const RestaurantMenu = () => {
 
   if (loading) {
     return (
-      <div className="loader-container">
-        <div className="loader"></div>
-        <p>Loading menu...</p>
+      <div className="restaurant-menu-page">
+        <div className="container">
+          <div className="loader-container">
+            <div className="loader"></div>
+            <p>Loading menu...</p>
+          </div>
+        </div>
       </div>
     );
   }

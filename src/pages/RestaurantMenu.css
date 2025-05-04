@@ -1,5 +1,13 @@
 .restaurant-menu-page {
   padding: 2rem 0;
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .error-message {
@@ -37,6 +45,7 @@
   grid-template-columns: 300px 1fr;
   gap: 2rem;
   margin-bottom: 2rem;
+  width: 100%;
 }
 
 .restaurant-image {
@@ -126,6 +135,7 @@
   display: grid;
   grid-template-columns: 200px 1fr;
   gap: 2rem;
+  width: 100%;
 }
 
 /* Category Sidebar */
@@ -133,6 +143,7 @@
   position: sticky;
   top: 100px;
   align-self: start;
+  width: 100%;
 }
 
 .category-sidebar h3 {
@@ -144,6 +155,7 @@
 .category-list {
   list-style: none;
   padding: 0;
+  width: 100%;
 }
 
 .category-list li {
@@ -166,10 +178,12 @@
 /* Menu Items */
 .menu-items-container {
   padding-bottom: 100px; /* Space for the view cart button */
+  width: 100%;
 }
 
 .menu-category {
   margin-bottom: 3rem;
+  width: 100%;
 }
 
 .category-title {
@@ -181,6 +195,7 @@
 .menu-items {
   display: grid;
   gap: 1.5rem;
+  width: 100%;
 }
 
 .menu-item {
@@ -191,6 +206,7 @@
   border-radius: var(--border-radius);
   padding: 1rem;
   transition: transform 0.3s, box-shadow 0.3s;
+  width: 100%;
 }
 
 .menu-item:hover {
@@ -211,8 +227,13 @@
   object-fit: cover;
 }
 
+.menu-item-details {
+  width: 100%;
+}
+
 .menu-item-details h3 {
   margin-bottom: 0.5rem;
+  font-size: 1.1rem;
 }
 
 .menu-item-description {
@@ -220,6 +241,11 @@
   line-height: 1.5;
   opacity: 0.8;
   margin-bottom: 1rem;
+  /* Add ellipsis for long descriptions */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .menu-item-price-actions {
@@ -246,6 +272,7 @@
   padding: 0.5rem 1rem;
   cursor: pointer;
   transition: background-color 0.3s;
+  white-space: nowrap;
 }
 
 .add-to-cart-btn:hover {
@@ -363,30 +390,68 @@
 }
 
 /* Responsive */
+@media screen and (max-width: 992px) {
+  .restaurant-header {
+    grid-template-columns: 250px 1fr;
+    gap: 1.5rem;
+  }
+  
+  .restaurant-image {
+    height: 250px;
+  }
+  
+  .menu-content {
+    grid-template-columns: 180px 1fr;
+    gap: 1.5rem;
+  }
+}
+
 @media screen and (max-width: 768px) {
+  .restaurant-menu-page {
+    padding: 1rem 0;
+  }
+  
   .restaurant-header {
     grid-template-columns: 1fr;
+    gap: 1rem;
   }
   
   .restaurant-image {
     height: 200px;
   }
   
+  .restaurant-details h1 {
+    font-size: 1.8rem;
+  }
+  
   .menu-content {
     grid-template-columns: 1fr;
+    gap: 1rem;
   }
   
   .category-sidebar {
     position: static;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .category-sidebar h3 {
+    margin-bottom: 1rem;
   }
   
   .category-list {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
     margin-bottom: 1rem;
+    -webkit-overflow-scrolling: touch;
+    /* Hide scrollbar */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+  }
+  
+  .category-list::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
   }
   
   .category-list li {
@@ -394,6 +459,7 @@
     margin-right: 0.5rem;
     margin-bottom: 0;
     white-space: nowrap;
+    padding: 0.6rem 1rem;
   }
   
   .menu-item {
@@ -405,5 +471,143 @@
   .menu-item-image {
     width: 80px;
     height: 80px;
+  }
+  
+  .menu-item-details h3 {
+    font-size: 1rem;
+  }
+  
+  .menu-item-description {
+    font-size: 0.85rem;
+    -webkit-line-clamp: 2;
+    margin-bottom: 0.5rem;
+  }
+  
+  .menu-item-price {
+    font-size: 1rem;
+  }
+  
+  .add-to-cart-btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+  
+  .view-cart-btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .added-message {
+    bottom: 1.5rem;
+    right: 1.5rem;
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .restaurant-menu-page {
+    padding: 0.8rem 0;
+  }
+  
+  .container {
+    padding: 0 0.8rem;
+  }
+  
+  .back-button {
+    margin-bottom: 1.5rem;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+  
+  .restaurant-image {
+    height: 180px;
+  }
+  
+  .restaurant-details h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  .restaurant-cuisine {
+    font-size: 0.9rem;
+    margin-bottom: 0.7rem;
+  }
+  
+  .restaurant-description {
+    font-size: 0.9rem;
+  }
+  
+  .category-sidebar h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.7rem;
+  }
+  
+  .category-list li {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.9rem;
+  }
+  
+  .category-title {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .menu-items {
+    gap: 1rem;
+  }
+  
+  .menu-item {
+    grid-template-columns: 70px 1fr;
+    gap: 0.8rem;
+    padding: 0.7rem;
+  }
+  
+  .menu-item-image {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .menu-item-details h3 {
+    font-size: 0.95rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  .menu-item-description {
+    font-size: 0.8rem;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+  }
+  
+  .menu-item-price {
+    font-size: 0.95rem;
+  }
+  
+  .add-to-cart-btn {
+    padding: 0.4rem 0.7rem;
+    font-size: 0.85rem;
+  }
+  
+  .counter-btn {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .count {
+    min-width: 20px;
+    font-size: 0.9rem;
+  }
+  
+  .view-cart-btn {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.85rem;
+    bottom: 1rem;
+  }
+  
+  .added-message {
+    bottom: 1rem;
+    right: 1rem;
+    padding: 0.7rem 1.2rem;
+    font-size: 0.85rem;
   }
 } 
