@@ -56,9 +56,13 @@ const Restaurants = () => {
 
   if (loading) {
     return (
-      <div className="loader-container">
-        <div className="loader"></div>
-        <p>Loading restaurants...</p>
+      <div className="restaurants-page">
+        <div className="container">
+          <div className="loader-container">
+            <div className="loader"></div>
+            <p>Loading restaurants...</p>
+          </div>
+        </div>
       </div>
     );
   }
