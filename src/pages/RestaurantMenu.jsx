@@ -5,6 +5,73 @@ import { useCart } from '../context/CartContext';
 import { restaurantData } from '../data/restaurantData';
 import './RestaurantMenu.css';
 
+const Menu = ({ menu, itemCounts, handleQuantityChange, handleAddToCart, categoryRefs }) => {
+  return (
+    <div className="menu-items-container">
+      {menu.categories.map(category => (
+        <div 
+          key={category.name} 
+          className="menu-category"
+          ref={el => categoryRefs.current[category.name] = el}
+        >
+          <h2 className="category-title">{category.name}</h2>
+          <div className="menu-items">
+            {category.items.map(item => (
+              <div className="menu-item" key={item.id}>
+                <div className="menu-item-image">
+                  <img 
+                    src={item.image} 
+                    alt={item.name} 
+                    onError={(e) => {
+                      console.error(`Failed to load image for ${item.name}:`, item.image);
+                      e.target.src = 'https://via.placeholder.com/100x100?text=Image+Error';
+                    }}
+                  />
+                </div>
+                <div className="menu-item-details">
+                  <h3>{item.name}</h3>
+                  <p className="menu-item-description">{item.description}</p>
+                  <div className="menu-item-price-actions">
+                    <span className="menu-item-price">₹{item.price.toFixed(2)}</span>
+                    <div className="menu-item-actions">
+                      {itemCounts[item.id] > 0 ? (
+                        <div className="item-counter">
+                          <button 
+                            className="counter-btn minus"
+                            onClick={() => handleQuantityChange(item, 'decrease')}
+                            aria-label="Decrease quantity"
+                          >
+                            <FaMinus />
+                          </button>
+                          <span className="count">{itemCounts[item.id]}</span>
+                          <button 
+                            className="counter-btn plus"
+                            onClick={() => handleQuantityChange(item, 'increase')}
+                            aria-label="Increase quantity"
+                          >
+                            <FaPlus />
+                          </button>
+                        </div>
+                      ) : (
+                        <button 
+                          className="add-to-cart-btn"
+                          onClick={() => handleAddToCart(item)}
+                        >
+                          Add to Cart
+                        </button>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+};
+
 const RestaurantMenu = () => {
   const { restaurantId } = useParams();
   const navigate = useNavigate();
@@ -221,68 +288,13 @@ const RestaurantMenu = () => {
           </div>
 
           {/* Menu Items */}
-          <div className="menu-items-container">
-            {menu.categories.map(category => (
-              <div 
-                key={category.name} 
-                className="menu-category"
-                ref={el => categoryRefs.current[category.name] = el}
-              >
-                <h2 className="category-title">{category.name}</h2>
-                <div className="menu-items">
-                  {category.items.map(item => (
-                    <div className="menu-item" key={item.id}>
-                      <div className="menu-item-image">
-                        <img 
-                          src={item.image} 
-                          alt={item.name} 
-                          onError={(e) => {
-                            console.error(`Failed to load image for ${item.name}:`, item.image);
-                            e.target.src = 'https://via.placeholder.com/100x100?text=Image+Error';
-                          }}
-                        />
-                      </div>
-                      <div className="menu-item-details">
-                        <h3>{item.name}</h3>
-                        <p className="menu-item-description">{item.description}</p>
-                        <div className="menu-item-price-actions">
-                          <span className="menu-item-price">₹{item.price.toFixed(2)}</span>
-                          <div className="menu-item-actions">
-                            {itemCounts[item.id] > 0 ? (
-                              <div className="item-counter">
-                                <button 
-                                  className="counter-btn minus"
-                                  onClick={() => handleQuantityChange(item, 'decrease')}
-                                  aria-label="Decrease quantity"
-                                >
-                                  <FaMinus />
-                                </button>
-                                <span className="count">{itemCounts[item.id]}</span>
-                                <button 
-                                  className="counter-btn plus"
-                                  onClick={() => handleQuantityChange(item, 'increase')}
-                                  aria-label="Increase quantity"
-                                >
-                                  <FaPlus />
-                                </button>
-                              </div>
-                            ) : (
-                              <button 
-                                className="add-to-cart-btn"
-                                onClick={() => handleAddToCart(item)}
-                              >
-                                Add to Cart
-                              </button>
-                            )}
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
+          <Menu 
+            menu={menu} 
+            itemCounts={itemCounts} 
+            handleQuantityChange={handleQuantityChange} 
+            handleAddToCart={handleAddToCart} 
+            categoryRefs={categoryRefs}
+          />
         </div>
 
         {/* View Cart Button */}

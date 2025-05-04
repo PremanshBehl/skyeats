@@ -179,6 +179,7 @@
 .menu-items-container {
   padding-bottom: 100px; /* Space for the view cart button */
   width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 .menu-category {
@@ -190,6 +191,8 @@
   margin-bottom: 1.5rem;
   padding-bottom: 0.5rem;
   border-bottom: 1px solid #333;
+  width: 100%;
+  text-align: left;
 }
 
 .menu-items {
@@ -207,6 +210,7 @@
   padding: 1rem;
   transition: transform 0.3s, box-shadow 0.3s;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .menu-item:hover {
@@ -438,6 +442,12 @@
     margin-bottom: 1rem;
   }
   
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  
+  /* Create horizontal scrolling menu*/
   .category-list {
     display: flex;
     flex-wrap: nowrap;
@@ -448,6 +458,7 @@
     /* Hide scrollbar */
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none; /* IE and Edge */
+    white-space: nowrap;
   }
   
   .category-list::-webkit-scrollbar {
@@ -462,6 +473,7 @@
     padding: 0.6rem 1rem;
   }
   
+  /* Fix for menu items */
   .menu-item {
     grid-template-columns: 80px 1fr;
     gap: 1rem;
@@ -506,12 +518,19 @@
 }
 
 @media screen and (max-width: 480px) {
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  
   .restaurant-menu-page {
     padding: 0.8rem 0;
+    overflow-x: hidden;
   }
   
   .container {
     padding: 0 0.8rem;
+    overflow-x: hidden;
   }
   
   .back-button {
@@ -538,6 +557,11 @@
     font-size: 0.9rem;
   }
   
+  .menu {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  
   .category-sidebar h3 {
     font-size: 1.2rem;
     margin-bottom: 0.7rem;
@@ -551,21 +575,41 @@
   .category-title {
     font-size: 1.3rem;
     margin-bottom: 1rem;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 0.5rem 0;
   }
   
   .menu-items {
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 1rem;
+    width: 100%;
+    max-width: 100%;
   }
   
   .menu-item {
+    display: grid;
     grid-template-columns: 70px 1fr;
     gap: 0.8rem;
+    margin: 0;
     padding: 0.7rem;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
   }
   
   .menu-item-image {
     width: 70px;
     height: 70px;
+    min-width: 70px;
+  }
+  
+  .menu-item-details {
+    width: calc(100% - 70px - 0.8rem);
+    max-width: 100%;
+    padding-right: 0.5rem;
   }
   
   .menu-item-details h3 {
@@ -577,6 +621,16 @@
     font-size: 0.8rem;
     line-height: 1.4;
     margin-bottom: 0.5rem;
+    width: 100%;
+  }
+  
+  .menu-item-price-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.5rem;
+    width: 100%;
+    align-items: center;
   }
   
   .menu-item-price {
@@ -584,8 +638,8 @@
   }
   
   .add-to-cart-btn {
-    padding: 0.4rem 0.7rem;
-    font-size: 0.85rem;
+    padding: 0.4rem 0.6rem;
+    font-size: 0.8rem;
   }
   
   .counter-btn {
